@@ -1,0 +1,91 @@
+
+.signin-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100vh;
+  background-image: url('./signup_enhanced.jpg'); 
+  background-size: cover; 
+  background-position: center; 
+  background-repeat: no-repeat; 
+}
+
+h2 {
+  text-align: center;
+  color: #110101;
+}
+
+.signin-form {
+    width: 100%;
+    max-width: 400px;
+    background-color: white;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(15, 2, 2, 0.1);
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  font-weight: bold;
+  margin-bottom: 15px;
+  margin-top: 15px;
+  color: #070101;
+}
+
+input {
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+input:focus {
+  border-color: #5e9ed6;
+  outline: none;
+}
+
+.signin-btn {
+  margin-top: 10px;
+  padding: 10px;
+  background-color: #5e9ed6;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s;
+  width: 100%;
+}
+
+.signin-btn:hover {
+  background-color: #4a8cc2;
+}
+.login-link {
+  margin-right: 20px;
+  font-weight: bold;
+  text-decoration: none;
+  color: black;
+  font-size: 1.2rem;
+  border: none;
+  border-radius: 10px;
+  background-color: transparent;
+  background-image: none;
+}
+.login-btun{
+  border: none;
+  background-image: none;
+  background-color: transparent;
+  font-weight: bold;
+  color: black;
+  font-size: 1.2rem;
+  border-radius: 10px;
+}
+.login-btun:hover{
+  text-decoration: underline;
+}
+

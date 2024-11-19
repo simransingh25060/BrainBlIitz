@@ -1,0 +1,114 @@
+
+.home {
+  font-family: Arial, sans-serif;
+}
+body{
+  margin: 0;
+  padding: 0;
+}
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 7vh;
+  width: 100%;
+  background-color: white;
+  color: black;
+  position: fixed;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  top: 0;
+}
+
+.logo{
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.logo-img {
+  max-height: 10vh;  
+  margin-left: 3vw;
+}
+a{
+  color: black;
+  text-decoration: none;
+  margin: 0px 10px;
+  font-size: 3vh;
+}
+a:hover{
+  font-weight: bold;
+}
+
+.nav-links {
+  padding-right: 5vw;
+}
+.signup{
+  background-color: rgb(250 204 21 );
+  border: none;
+  height:5vh ;
+  width: 5vw;
+  border-radius: 10px;
+  font-size: 1rem;
+}
+.login {
+  margin-right: 20px;
+  text-decoration: none;
+  color: black;
+  font-size: 1rem;
+  border: none;
+  height:5vh ;
+  width: 5vw;
+  border-radius: 10px;
+  background-color: transparent;
+  background-image: none;
+}
+
+.login:hover {
+  background-color: rgb(227, 221, 221);
+}
+ .container {
+  height: 100vh;    
+  display: flex;
+  justify-content: center;
+  align-items: center;      
+  padding-top: 25vh; 
+}
+h1{
+  font-size: 6rem;
+  font-weight: 800;
+  color: rgb(68, 11, 11);
+  margin: 0;
+  height: 15vh;
+  width: 90%;
+  animation: scale-in-out 2s infinite ease-in-out;
+}
+
+@keyframes scale-in-out {
+    0%, 100% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.05);
+    }
+}
+
+h2{
+  font-size: 2rem;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+h5{
+  font-size: 1.5rem;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+
+
+
+
+
+
+
+
+
+
+
