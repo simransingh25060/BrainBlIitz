@@ -3,6 +3,7 @@ import { createUserWithEmailAndPassword } from "firebase/auth";
 import React, { useState } from 'react';
 import { auth, db } from "./firebase";
 import { setDoc, doc } from "firebase/firestore";
+import { toast } from "react-toastify";
 
 
 import './signin.css';
@@ -29,14 +30,14 @@ function SignIn() {
        }
       console.log("User Registered Successfully!");
 
-      // toast.success("User Registered Successfully!!", {
-      //   position: "top-center",
-      // });
+      toast.success("User Registered Successfully!!", {
+        position: "top-center",
+      });
     } catch (error) {
       console.log(error.message);
-      // toast.error(error.message, {
-      //   position: "bottom-center",
-      // });
+      toast.error(error.message, {
+        position: "bottom-center",
+      });
     }
   };
 
