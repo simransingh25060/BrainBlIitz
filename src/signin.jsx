@@ -32,6 +32,8 @@ function SignIn() {
 
       toast.success("User Registered Successfully!!", {
         position: "top-center",
+        autoClose: 1000,
+        
       });
     } catch (error) {
       console.log(error.message);
