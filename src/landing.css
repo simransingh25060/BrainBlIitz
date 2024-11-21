@@ -1,7 +1,7 @@
 html{
   scroll-behavior: smooth;
 }
-body{
+.landingpage{
   margin: 0;
   padding: 0;
   background-image: url('./blitzbg1_enhanced.jpg');
@@ -162,16 +162,19 @@ h5{
 .contact-info h3 {
   font-size: 2rem;
   margin-top: 20px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
 .contact-info p {
   font-size: 1.2rem;
   margin-bottom: 10px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
 .contact-info a {
   color: #0073e6;
   text-decoration: none;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
 .contact-info a:hover {
@@ -195,4 +198,5 @@ footer p{
   height: 50px;
   background-color: #f4f4f4;
   margin: 0;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }

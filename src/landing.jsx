@@ -5,7 +5,7 @@ import './landing.css';
 
 const Landing = () => {
   return (
-    <div className="landing" id="landing">
+    <div className="landingpage" id="landing">
       <nav className="navbar">
         <div className="logo">
           <img src="/blitzlogo-removebg-preview.png" alt="Logo" className="logo-img" />
