@@ -8,13 +8,14 @@ import Login from './login';
 import Landing from './landing';
 import Game from './game';
 import Quizing from './quizing';
-import Quiz from './quiz';
+
 
 
 
 
 import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
+import Quiz from './quiz';
 
 
 function App() {
