@@ -15,7 +15,7 @@ import Quizing from './quizing';
 
 import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
-import Quiz from './quiz';
+import Quiz from './components/quiz';
 
 
 function App() {
