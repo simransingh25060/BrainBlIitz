@@ -1,5 +1,4 @@
 
-
 import React, { useEffect, useState } from 'react';
 import { useLocation, useNavigate } from 'react-router-dom';
 import './Quiz.css';  
@@ -94,11 +93,16 @@ const Quiz = () => {
   const currentShuffledAnswers = shuffledAnswers[currentQuestionIndex];
 
   return (
+   
     <div className="quiz-container">
+      <h3>QUIZ TIME,<br/>
+      GOOD LUCK!</h3>
+      <div className="quizbox">
       <div className="quiz-header">
         <h4>Hey, {username}!</h4>
         <h2>Question {currentQuestionIndex + 1}: {question.question}</h2>
       </div>
+
       <ul className="answer-list">
         {currentShuffledAnswers.map((answer, index) => {
           let answerClass = 'answer-item';
@@ -136,7 +140,9 @@ const Quiz = () => {
       </div>
       <p className="score">Score: {score}</p>
     </div>
+    </div>
   );
 };
 
 export default Quiz;
+

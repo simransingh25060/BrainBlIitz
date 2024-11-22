@@ -27,7 +27,7 @@ const Quizing = () => {
   return (
     <div className="quizing-container">
       <div className="form-container">
-        <h2>QUIZ TIME</h2>
+        <h2>QUIZ TIME!</h2>
 
         <div className="form-item">
           <label htmlFor="username">Username:</label>

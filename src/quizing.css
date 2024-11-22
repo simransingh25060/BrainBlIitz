@@ -3,7 +3,7 @@
     display: flex;
     justify-content: space-between;
     padding: 20px;
-    background-image: url('./quizbg_enhanced.jpg');
+    background-image: url('https://ucarecdn.com/68f7f75d-6653-4e17-8868-bdd7f8822676/-/preview/1000x1000/');
     background-size: cover;  
     background-position: center; 
     background-repeat: no-repeat;
@@ -20,6 +20,8 @@
     padding: 20px;
     border-radius: 8px;
     border: rgb(15, 15, 100) 2px solid;
+    background-color: rgba(201, 203, 208, 0.926);
+
   }
   .form-container h2{
     font-size: 3rem;
@@ -72,4 +74,5 @@
     border-radius: 50%;
     animation: scale-in-out 2s infinite ease-in-out;
   }
+  
   
