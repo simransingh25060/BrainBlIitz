@@ -17,9 +17,9 @@
   
   .form-container {
     width: 45%;
-    background-color: #f4f4f4;
     padding: 20px;
     border-radius: 8px;
+    border: rgb(15, 15, 100) 2px solid;
   }
   .form-container h2{
     font-size: 3rem;
@@ -48,8 +48,8 @@
     border: 1px solid #ddd;
     border-radius: 4px;
   }
-  
-  button {
+
+  .startquiz {
     background-color: #007bff;
     color: white;
     border: none;
@@ -58,9 +58,9 @@
     cursor: pointer;
   }
   
-  button:hover {
+  .startquiz:hover {
     background-color: #0056b3;
-  }
+  } 
   
   .image-container {
     width: 45%;

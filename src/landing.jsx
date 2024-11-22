@@ -8,7 +8,7 @@ const Landing = () => {
     <div className="landingpage" id="landing">
       <nav className="navbar">
         <div className="logo">
-          <img src="/blitzlogo-removebg-preview.png" alt="Logo" className="logo-img" />
+          <img src="https://ucarecdn.com/218e90b8-3175-4901-af3a-1e4ae51cfaf4/-/preview/358x141/" alt="Logo" className="logo-img" />
         </div>
         <div className="navheading">
           <a href="#landing" className="landing">Home</a>
@@ -38,7 +38,7 @@ const Landing = () => {
           <p>Brain Blitz is designed to push the boundaries of your mind. Engage with challenging games that help you grow your cognitive skills, enhance memory, and boost your problem-solving ability. Whether you're looking to sharpen your mind or just have fun.</p>
         </div>
         <div className="about-image">
-          <img src="src/blitzabout-removebg-preview.png" alt="Brain" className="brain-img" />
+          <img src="https://ucarecdn.com/6cbb1d50-be09-43c2-9db8-bd9a983b7e40/-/preview/630x360/" alt="Brain" className="brain-img" />
         </div>
       </section>
 

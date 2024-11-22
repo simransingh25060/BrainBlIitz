@@ -60,12 +60,12 @@ const Quizing = () => {
           </select>
         </div>
 
-        <button onClick={startQuiz}>Start Quiz</button>
+        <button className="startquiz" onClick={startQuiz}>Start Quiz</button>
         
       </div>
       <div className="image-container">
       <img 
-        src="src/QUIZINGIMAGE.webp" 
+        src="https://ucarecdn.com/8b310b4e-cdca-4cc2-9d4e-30987a1803b4/-/preview/800x623/" 
         alt="Quiz Image" 
          className="quiz-image"
        />

@@ -1,39 +1,51 @@
-
-import { createUserWithEmailAndPassword } from "firebase/auth";
+import { createUserWithEmailAndPassword, fetchSignInMethodsForEmail } from "firebase/auth";
 import React, { useState } from 'react';
 import { auth, db } from "./firebase";
 import { setDoc, doc } from "firebase/firestore";
 import { toast } from "react-toastify";
 
-
 import './signin.css';
-import { Link } from 'react-router-dom';  
-
+import { Link } from 'react-router-dom';
 
 function SignIn() {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
   const [fullName, setFullName] = useState(''); 
 
-  
   const handleRegister = async (e) => {
     e.preventDefault();
+
+    if (password.length < 6) {
+      toast.error("Password must be at least 6 characters long.", {
+        position: "top-center",
+        autoClose: 2000,
+      });
+      return;
+    }
+
     try {
-      await createUserWithEmailAndPassword(auth, email, password);
-      const user = auth.currentUser;
-      console.log(user);
-       if (user) {
-         await setDoc(doc(db, "Users", user.uid), {
+      const methods = await fetchSignInMethodsForEmail(auth, email);
+      if (methods.length > 0) {
+        toast.error("This email is already registered. Please use a different one.", {
+          position: "top-center",
+          autoClose: 3000,
+        });
+        return;
+      }
+
+      const userCredential = await createUserWithEmailAndPassword(auth, email, password);
+      const user = userCredential.user;
+
+      if (user) {
+        await setDoc(doc(db, "Users", user.uid), {
           email: user.email,
           fullName: fullName,
         });
-       }
-      console.log("User Registered Successfully!");
+      }
 
-      toast.success("User Registered Successfully!!", {
+      toast.success("User Registered Successfully!", {
         position: "top-center",
         autoClose: 1000,
-        
       });
     } catch (error) {
       console.log(error.message);
@@ -42,8 +54,6 @@ function SignIn() {
       });
     }
   };
-
-  
 
   return (
     <div className="signin-container">

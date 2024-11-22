@@ -16,6 +16,7 @@ import Quizing from './quizing';
 import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import Quiz from './components/quiz';
+import Score from './components/score';
 
 
 function App() {
@@ -28,6 +29,7 @@ function App() {
         <Route path="/game" element={<Game />} />
         <Route path="/quizing" element={<Quizing />} />
         <Route path="/Quiz" element={<Quiz />} />
+        <Route path="/score" element={<Score />} />
       </Routes>
       <ToastContainer/>
     </Router>
