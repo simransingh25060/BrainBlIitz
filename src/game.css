@@ -21,6 +21,7 @@
     border-radius: 20px; 
     overflow: hidden;
     cursor: pointer;
+    animation: scale-in-out 2s ease-in-out;
   }
   .section:hover{
     animation: scale-in-out 3s infinite ease-in-out;
