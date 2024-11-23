@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import { useNavigate } from 'react-router-dom';
 import './puzzle.css';
 
 const rows = 3;
@@ -15,12 +16,14 @@ const shuffleArray = (array) => {
     return shuffledArray;
 };
 
-const Puzzle = () => {
+const Puzzle = () => { 
     const [tiles, setTiles] = useState([]);
     const [turns, setTurns] = useState(0);
     const [currTile, setCurrTile] = useState(null);
     const [otherTile, setOtherTile] = useState(null);
     const [winner, setWinner] = useState(false);
+
+    const navigate = useNavigate();
 
     
     const initializePuzzle = () => {
@@ -34,9 +37,7 @@ const Puzzle = () => {
         setWinner(false);
     };
 
-    const handleEndPuzzle = () => {
-        navigate('/score', { state: { score } });
-      };
+   
 
     const checkWinner = (currentTiles) => {
         const tileOrder = currentTiles.map((tile) => tile.img);
@@ -95,6 +96,9 @@ const Puzzle = () => {
         }
     };
 
+    const handleEndPuzzle = () => {
+        navigate('/game'); // Navigate to the game page
+    };
     return (
         <div className="puzzlegame">
             <img id="title" src="./logo.png" alt="Logo" />
@@ -123,7 +127,7 @@ const Puzzle = () => {
                     <p>You did it! Congratulations!</p>
                     <button onClick={initializePuzzle}>Play Again</button>
                     <button className="endpuzzling" onClick={handleEndPuzzle}>
-                     End Puzzle
+                     Quit Puzzle
                    </button>
                 </div>
             )}
