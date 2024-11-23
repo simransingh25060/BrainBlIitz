@@ -5,13 +5,10 @@
     background: linear-gradient(135deg, rgb(205, 228, 234) 0%, rgb(142, 161, 236) 100%);
     overflow: hidden;
   }
-  
-
 #title {
     height: 150px;
     width: 400px;
 }
-
 #board {
     width: 360px;
     height: 360px;
@@ -21,7 +18,6 @@
     display: flex;
     flex-wrap: wrap;
 }
-
 #board img {
     width: 118px;
     height: 118px;
@@ -34,7 +30,6 @@
     font-weight: bold;
     border-radius: 5px;
 }
-
 #winner-message button {
     background-color: #0c67ae;
     color: white;
@@ -43,8 +38,9 @@
     border: none;
     cursor: pointer;
     border-radius: 5px;
+    width: 10%;
+    margin: 0px 10px 0px 10px;
 }
-
 #winner-message button:hover {
     background-color: #0b4d7a;
 }
