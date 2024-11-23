@@ -80,11 +80,11 @@ const Quiz = () => {
   };
 
   if (loading) {
-    return <div>Loading quiz...</div>;
+    return <div className= "loading">Loading quiz...</div>;
   }
 
   if (questions.length === 0) {
-    return <div>No questions available</div>;
+    return <div className="noquestion">Sorry! No questions available for this category. Try another one.</div>;
   }
 
   const question = questions[currentQuestionIndex];
