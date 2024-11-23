@@ -50,9 +50,19 @@ const Puzzle = () => {
         initializePuzzle(); 
     }, []);
 
-    const handleDragStart = (tile) => {
-        setCurrTile(tile);
+    // const handleDragStart = (tile) => {
+    //     setCurrTile(tile);
+    // };
+
+    const handleDragStart = (tile, e) => {
+        if (e.type === "touchstart") {
+            setCurrTile(tile);
+        } else {
+            e.preventDefault(); 
+            setCurrTile(tile);
+        }
     };
+    
 
     const handleDragOver = (e) => {
         e.preventDefault();
@@ -66,8 +76,17 @@ const Puzzle = () => {
         
     };
 
-    const handleDrop = (tile) => {
-        setOtherTile(tile);
+    // const handleDrop = (tile) => {
+    //     setOtherTile(tile);
+    // };
+
+    const handleDrop = (tile, e) => {
+        if (e.type === "touchend") {
+            setOtherTile(tile);
+        } else {
+            e.preventDefault();
+            setOtherTile(tile);
+        }
     };
 
     const handleDragEnd = () => {
