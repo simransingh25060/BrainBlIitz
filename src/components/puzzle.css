@@ -1,0 +1,59 @@
+.puzzlegame {
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    height: 100vh;
+    background: linear-gradient(135deg, rgb(205, 228, 234) 0%, rgb(142, 161, 236) 100%);
+    overflow: hidden;
+  }
+  
+
+#title {
+    height: 150px;
+    width: 400px;
+}
+
+#board {
+    width: 360px;
+    height: 360px;
+    background-color: lightblue;
+    border: 10px solid #0c67ae;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#board img {
+    width: 118px;
+    height: 118px;
+    border: 1px solid #0c67ae;
+}
+
+#winner-message {
+    color: green;
+    font-size: 1.5rem;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+#winner-message button {
+    background-color: #0c67ae;
+    color: white;
+    padding: 10px 20px;
+    font-size: 1rem;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+#winner-message button:hover {
+    background-color: #0b4d7a;
+}
+.winner-message {
+    font-size: 24px;
+    color: green;
+    text-align: center;
+    margin-top: 20px;
+}
+
+
+

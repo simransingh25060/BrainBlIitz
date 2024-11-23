@@ -21,8 +21,8 @@ const Score = () => {
     <div className="scoring">
       <h2>Quiz Finished!</h2>
       <h3>Your Final Score: {score}</h3>
-      <button className="end" onClick={handleEndQuiz}>Quit Quiz</button>
       <button className="again" onClick={handlePlayAgain}>Play Again</button> 
+      <button className="end" onClick={handleEndQuiz}>Quit Quiz</button>
     </div>
   );
 };

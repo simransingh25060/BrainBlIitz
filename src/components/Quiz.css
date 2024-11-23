@@ -13,10 +13,6 @@
   flex-direction: column;
   align-items: center;
   overflow: hidden;
-  /* background: linear-gradient(135deg, rgb(205, 228, 234) 0%, rgb(142, 161, 236) 100%); */
-  /* background-image: url('https://ucarecdn.com/7cd1d202-fa2c-4d46-916c-321e1f9d590b/-/preview/1000x666/');  */
-    /* background-image: url('https://ucarecdn.com/c2f8c0ed-34ce-4db2-88b5-cd3c72691b34/-/preview/1000x666/'); */
-    /* background-image: url('https://ucarecdn.com/c3478cbf-e28e-4ba3-b301-02364e51fa65/-/preview/1000x562/'); */
     background-image: url('https://ucarecdn.com/343af149-5a52-4742-a324-ff16eeb6e507/-/preview/1000x726/');
 }
 .quiz-container h3{
