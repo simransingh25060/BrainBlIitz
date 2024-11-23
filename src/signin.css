@@ -88,4 +88,9 @@ input:focus {
 .login-btun:hover{
   text-decoration: underline;
 }
+@media (max-width: 500px) {
+  .signin-form {
+    max-width: 250px;
+  }
+}
 

@@ -91,4 +91,8 @@
   .login-btun {
     font-size: 1.2rem;
   }
-  
+  @media (max-width: 500px) {
+    .login-form {
+      max-width: 250px;
+    }
+  }

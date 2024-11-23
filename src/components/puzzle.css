@@ -38,7 +38,6 @@
     border: none;
     cursor: pointer;
     border-radius: 5px;
-    width: 10%;
     margin: 0px 10px 0px 10px;
 }
 #winner-message button:hover {
@@ -50,6 +49,5 @@
     text-align: center;
     margin-top: 20px;
 }
-
 
 

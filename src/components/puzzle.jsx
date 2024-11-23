@@ -97,7 +97,7 @@ const Puzzle = () => {
     };
 
     const handleEndPuzzle = () => {
-        navigate('/game'); // Navigate to the game page
+        navigate('/game'); 
     };
     return (
         <div className="puzzlegame">

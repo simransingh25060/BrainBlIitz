@@ -167,8 +167,14 @@
   height: 100vh;
 
 }
-@media (max-width: 350px) {
-    .quizbox {
-background-image: url('https://ucarecdn.com/68f7f75d-6653-4e17-8868-bdd7f8822676/-/preview/1000x1000/');
+@media (max-width: 400px) {
+  .quiz-container h3{
+    font-size: 2rem;
+}
+.quizbox {
+  max-width: 300px;
+}
+.quiz-header h2 {
+  font-size: 1rem;
 }
 }

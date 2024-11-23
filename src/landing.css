@@ -1,5 +1,12 @@
-html{
+html {
   scroll-behavior: smooth;
+  width: 100%;
+  overflow-x: hidden; 
+}
+
+body {
+  margin: 0;
+  padding: 0;
 }
 .landingpage{
   margin: 0;
@@ -10,6 +17,7 @@ html{
   background-repeat: no-repeat;
   height: 100vh;  
   width: 100%;
+  
 }
 .navbar {
   display: flex;
@@ -52,12 +60,11 @@ a:hover{
   background-color: rgb(250 204 21 );
   border: none;
   height:5vh ;
-  width: 5vw;
+  width: 6vw;
   border-radius: 10px;
   font-size: 1rem;
 }
 .loginland {
-  margin-right: 20px;
   text-decoration: none;
   color: black;
   font-size: 1rem;
@@ -200,3 +207,146 @@ footer p{
   margin: 0;
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
+
+
+
+@media (max-width: 750px) {
+  .navbar {
+    flex-direction: column;
+    height: 12vh;
+  }
+  .signupland, .loginland {
+    width: 100%;
+    font-size: 1rem;
+  }
+
+  .logo-img {
+   display: none;
+  }
+
+  .nav-links {
+    padding-top: 10px;
+    display: flex;
+  }
+
+  .container {
+    padding-top: 20vh;
+    text-align: center;
+  }
+
+  h1 {
+    font-size: 3rem;
+  }
+
+  .about-section {
+    flex-direction: column;
+    padding: 5vw;
+  }
+  .about-text h2{
+    font-size: 2rem;
+    width: 100vw;
+    text-align: center;
+    display: flex;
+    justify-content: flex start;
+  } 
+
+  .about-text,
+  .about-image {
+    width: 100%;
+    text-align: center;
+  }
+
+  .contact-section {
+    padding: 30px 10px;
+  }
+
+  .contact-info {
+    text-align: center;
+  }
+
+  .social-media ul {
+    padding: 0;
+  }
+
+  footer p {
+    font-size: 1rem;
+  }
+  .brain-img {
+    max-width: 100%;
+    height: auto; 
+  }
+}
+
+@media (max-width: 350px) {
+  .navbar {
+    flex-direction: column;
+    height: 12vh;
+  }
+
+  .logo-img {
+   display: none;
+  }
+
+  .nav-links {
+    display: flex;
+
+  }
+
+  .container {
+    padding-top: 20vh;
+    text-align: center;
+  }
+  h1 {
+    font-size: 2rem;
+  }
+
+  h2 {
+    font-size: 1.5rem;
+  }
+
+  h5 {
+    font-size: 1.2rem;
+  }
+ .about-text h2{
+    font-size: 2rem;
+    width: 100vw;
+    text-align: center;
+    display: flex;
+    justify-content: flex start;
+  } 
+  .about-text p{
+    font-size: 1.5rem;
+  }
+   .about-section {
+    flex-direction: column;
+    align-items: center; 
+    padding: 5vw; 
+  }
+
+  .about-text {
+    width: 100%; 
+    text-align: center; 
+    margin-bottom: 20px; 
+  }
+
+  .about-image {
+    width: 80%; 
+    text-align: center;
+  }
+
+  .brain-img {
+    max-width: 100%; 
+    height: auto; 
+  }
+  .signupland, .loginland {
+    width: 100%;
+    font-size: 1rem;
+  }
+  .contact-section h2 {
+    font-size: 2rem;
+  }
+  .contact-info h3 {
+    font-size: 1.2rem;
+  }
+}
+

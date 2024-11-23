@@ -10,6 +10,7 @@
     height: 100vh;  
     width: 100%;
     box-sizing: border-box;
+    overflow: hidden;
   }
   #username{
     width: 95%;
@@ -77,3 +78,78 @@
   }
   
   
+
+@media (max-width: 700px) {
+  .quizing-container {
+    justify-content: center;
+    padding: 10px;
+    flex-direction: column; 
+    align-items: center; 
+  }
+
+  .form-container {
+    width: 80%; 
+    padding: 15px;
+    margin-bottom: 20px; 
+    margin-top: 20px; 
+  }
+
+  .form-container h2 {
+    font-size: 2rem; 
+  }
+
+  .form-item input,
+  .form-item select {
+    font-size: 1rem;
+  }
+
+  .startquiz {
+    font-size: 1rem;
+    padding: 12px 25px;
+  }
+
+  .image-container {
+    width: 80%; 
+  }
+
+  .quiz-image {
+    height: 30vh;
+    border-radius: 10px;
+  }
+}
+
+@media (max-width: 350px) {
+  .quizing-container {
+    flex-direction: column;
+    align-items: center; 
+  }
+
+  .form-container {
+    width: 90%;
+    margin-bottom: 20px; 
+    margin-top: 20px; 
+  }
+
+  .form-container h2 {
+    font-size: 2rem;
+  }
+
+  .form-item input,
+  .form-item select {
+    font-size: 1.1rem; 
+  }
+
+  .startquiz {
+    font-size: 1.1rem;
+    padding: 12px 20px;
+  }
+
+  .image-container {
+    width: 90%;
+  }
+
+  .quiz-image {
+    height: 30vh; 
+    border-radius: 10px;
+  }
+}
