@@ -50,18 +50,10 @@ const Puzzle = () => {
         initializePuzzle(); 
     }, []);
 
-    // const handleDragStart = (tile) => {
-    //     setCurrTile(tile);
-    // };
-
-    const handleDragStart = (tile, e) => {
-        if (e.type === "touchstart") {
-            setCurrTile(tile);
-        } else {
-            e.preventDefault(); 
-            setCurrTile(tile);
-        }
+    const handleDragStart = (tile) => {
+        setCurrTile(tile);
     };
+
     
 
     const handleDragOver = (e) => {
@@ -76,21 +68,13 @@ const Puzzle = () => {
         
     };
 
-    // const handleDrop = (tile) => {
-    //     setOtherTile(tile);
-    // };
-
-    const handleDrop = (tile, e) => {
-        if (e.type === "touchend") {
-            setOtherTile(tile);
-        } else {
-            e.preventDefault();
-            setOtherTile(tile);
-        }
+    const handleDrop = (tile) => {
+        setOtherTile(tile);
     };
 
+
     const handleDragEnd = () => {
-        if (!otherTile || otherTile.img === "3.jpg") {
+        if (!otherTile || otherTile.img === "3.png") {
             return;
         }
 
@@ -126,7 +110,7 @@ const Puzzle = () => {
                     <img
                         key={tile.id}
                         id={tile.id}
-                        src={`${tile.img}.jpg`}
+                        src={`${tile.img}.png`}
                         alt={`Tile ${tile.id}`}
                         draggable
                         onDragStart={() => handleDragStart(tile)}
