@@ -18,23 +18,27 @@
 }
   
   .game-container {
-    background: linear-gradient(135deg, rgb(219, 245, 248) 0%, rgb(205, 211, 239) 100%);
+    background: linear-gradient(135deg, rgb(193, 238, 243) 0%, rgb(60, 178, 225) 100%);
     padding: 30px;
-    border-radius: 10px;
+    border-radius: 20px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    width: 400px;
+    width: 500px;
     text-align: center;
   }
   
   .game-container h1 {
     font-size: 2rem;
     color: #060404;
+    animation: scale-in-out 3s infinite ease-in-out;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
   }
   
   .hint {
     font-size: 1rem;
     color: #0e0909;
     margin-bottom: 20px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
   }
   
   .guess-form {
@@ -70,6 +74,7 @@
     margin-top: 20px;
     font-size: 1.2rem;
     font-weight: bold;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     color: #d9534f;
   }
   
