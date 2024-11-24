@@ -41,6 +41,21 @@ const Landing = () => {
         </div>
       </section>
 
+      <section className="comingsoon-section">
+        <h2>Ariving shortly on Brain Blitz!</h2>
+        <p>Working on exciting new games to challenge your mind. Stay tuned for more!</p>
+        <div className="cardcontainer">
+          <div className="cardos">
+            <img src="https://ucarecdn.com/85d37dcf-174b-4ab5-87de-0e56776e2cd8/-/preview/773x1000/" alt="Game 1" />
+            <p>Hangman game</p>
+          </div>
+          <div className="cardos">
+            <img src="https://ucarecdn.com/cd6b8418-35be-4207-83db-2df8c4fd756a/-/preview/1000x1000/" alt="Game 2" />
+            <p>Memory game</p>
+          </div>
+        </div>
+      </section>
+
 <section className="contact-section" id="contact">
 <h2>Let's connect?</h2>
 

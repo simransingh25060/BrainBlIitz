@@ -209,6 +209,45 @@ footer p{
 }
 
 
+.comingsoon-section {
+  text-align: center;
+  margin: 50px 0;
+  background-color: #f9f9f9;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.comingsoon-section h2{
+  color: #05305b;
+  font-size: 2.5rem;
+}
+.comingsoon-section p{
+  font-size: 1.5rem;
+}
+.cardcontainer {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+.cardos {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  width: 300px;
+  padding: 20px;
+  text-align: center;
+}
+
+.cardos img {
+  width: 100%;
+  height: 50vh;
+  border-radius: 8px;
+}
+
+.cardos p {
+  margin-top: 10px;
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+
 
 @media (max-width: 750px) {
   .navbar {
@@ -249,12 +288,21 @@ footer p{
     display: flex;
     justify-content: flex start;
   } 
+  .about-text p {
+    font-size: 1rem;
+  }
 
   .about-text,
   .about-image {
     width: 100%;
     text-align: center;
   }
+  .cardcontainer {
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  }
+
 
   .contact-section {
     padding: 30px 10px;
@@ -299,6 +347,10 @@ footer p{
   .content h1 {
     font-size: 2rem;
   }
+  .cardos img {
+    width: 80%;
+    height: 40vh;
+  }
 
   h2 {
     font-size: 1.5rem;
@@ -315,7 +367,7 @@ footer p{
     justify-content: flex start;
   } 
   .about-text p{
-    font-size: 1.5rem;
+    font-size: 1rem;
   }
    .about-section {
     flex-direction: column;
@@ -337,6 +389,12 @@ footer p{
   .brain-img {
     max-width: 100%; 
     height: auto; 
+  }
+  .comingsoon-section h2{
+    font-size: 2rem;
+  }
+  .comingsoon-section p {
+    font-size: 0.8rem;
   }
   .signupland, .loginland {
     width: 100%;
