@@ -68,6 +68,7 @@
 
   .section-title {
     font-size: 3rem; 
+      color: white;
   }
 }
 @media (max-width: 600px) {
@@ -86,6 +87,7 @@
 
   .section-title {
     font-size: 3rem; 
+    color: white;
   }
 }
 
@@ -103,5 +105,6 @@
 
   .section-title {
     font-size: 2.5rem; 
+    color: white;
   }
 }
