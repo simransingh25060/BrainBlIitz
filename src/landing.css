@@ -86,7 +86,7 @@ a:hover{
   align-items: center;      
   padding-top: 40vh; 
 }
-h1{
+.content h1{
   font-size: 6rem;
   font-weight: 800;
   color: rgba(2, 28, 52, 0.964); 
@@ -234,7 +234,7 @@ footer p{
     text-align: center;
   }
 
-  h1 {
+  .content  h1 {
     font-size: 3rem;
   }
 
@@ -296,7 +296,7 @@ footer p{
     padding-top: 20vh;
     text-align: center;
   }
-  h1 {
+  .content h1 {
     font-size: 2rem;
   }
 

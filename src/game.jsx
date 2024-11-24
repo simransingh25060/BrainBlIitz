@@ -18,6 +18,12 @@ const Game = () => {
           <div className="section-title">Puzzle</div>
         </Link>
       </div>
+      <div className="section word-guess-section">
+          <Link to="/guess" className="link">
+            <img src="https://ucarecdn.com/3b46dee6-61ad-4aac-832c-c86f2369c643/-/preview/1000x1000/" alt="Word Guess" className="section-image" id="word-guess"/>
+            <div className="section-title">Guess</div>
+          </Link>
+          </div>
     </div>
     </div>
   );

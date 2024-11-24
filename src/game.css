@@ -22,7 +22,6 @@
     border-radius: 20px; 
     overflow: hidden;
     cursor: pointer;
-    animation: scale-in-out 2s ease-in-out;
   }
   .section:hover{
     animation: scale-in-out 3s infinite ease-in-out;
@@ -51,6 +50,7 @@
     text-decoration: none;
     color: inherit;
   }
+ 
   
 @media (max-width: 950px) {
   .home {
@@ -63,7 +63,7 @@
   .section {
     width: 90%; 
     margin-bottom: 20px;
-    height: 45vh; 
+    height: 30vh; 
   }
 
   .section-title {
@@ -81,7 +81,7 @@
   .section {
     width: 90%; 
     margin-bottom: 20px; 
-    height: 45vh; 
+    height: 30vh; 
   }
 
   .section-title {
@@ -97,7 +97,7 @@
 
   .section {
     width: 90%;
-    height: 45vh; 
+    height: 30vh; 
     margin-bottom: 15px;
   }
 

@@ -21,7 +21,6 @@
     padding: 20px;
     border-radius: 8px;
     border: rgb(15, 15, 100) 2px solid;
-    /* background-color: rgba(201, 203, 208, 0.926);*/
     background: linear-gradient(135deg, rgb(239, 201, 236) 0%, rgb(180, 190, 234) 100%); 
 
   }
