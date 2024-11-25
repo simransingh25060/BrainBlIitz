@@ -6,7 +6,7 @@ const Landing = () => {
   return (
     <div className="landingpage" id="landing">
       <nav className="navbar">
-        <div className="logo">
+        <div>
           <img src="https://ucarecdn.com/218e90b8-3175-4901-af3a-1e4ae51cfaf4/-/preview/358x141/" alt="Logo" className="logo-img" />
         </div>
         <div className="navheading">

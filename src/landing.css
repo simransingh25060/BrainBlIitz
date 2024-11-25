@@ -20,23 +20,18 @@ body {
   
 }
 .navbar {
-  display: flex;
+  display:flex ;
   justify-content: space-between;
   align-items: center;
   height: 7vh;
   width: 100%;
   background-color: white;
   color: black;
-  position: fixed;
+  position:fixed;
   border-bottom-left-radius: 10px;
   border-bottom-right-radius: 10px;
   top: 0;
   z-index: 1000;
-}
-
-.logo{
-  font-size: 1.5rem;
-  font-weight: bold;
 }
 
 .logo-img {

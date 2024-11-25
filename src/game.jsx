@@ -18,7 +18,7 @@ const Game = () => {
           <div className="section-title">Puzzle</div>
         </Link>
       </div>
-      <div className="section word-guess-section">
+      <div className="section wordguess-section">
           <Link to="/guess" className="link">
             <img src="https://ucarecdn.com/bd2b761b-4bc3-493b-847c-14976af151c5/-/preview/1000x1000/" alt="Word Guess" className="section-image" id="word-guess"/>
             <div className="section-title">Guess</div>
